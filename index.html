@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <style>
+        .card:hover {
+            transform: scale(1.01);
+        }
+        .card {
+        transform: scale(0.9); /* Shrinks the cards to 90% of their original size */
+        transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+    }
+    </style> -->
+    <style>
+        .footer-overlay {
+            position: absolute;
+            bottom: 0;
+            /* Or set `top: 0` for overlaying at the top */
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            /* Semi-transparent black */
+            color: white;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<!-- <body style="background-image: url('./images/footer/Dresses.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;background-attachment: fixed;"> -->
+<body>
+    <!-- Nav bar -->
+    <nav class="navbar sticky-top navbar-expand-lg fw-bold " style="background-color: white;">
+        <div class="container">
+            <img class="navbar-brand" src="./images/logo.png" width="70" height="70" alt="VOUX">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav justify-content-end me-4 navbar-nav ms-auto">
+                    <li class="nav-item me-2">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: red;">HOME </i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-disabled="false">CLOTHING</a>
+                        <ul class="dropdown-menu " style=" margin-left: -70px;">
+                            <li><a class="dropdown-item" href="#">T-Shirt</a></li>
+                            <li><a class="dropdown-item" href="#">Sundress</a></li>
+                            <li><a class="dropdown-item" href="#">Ball Gown</a></li>
+                            <li><a class="dropdown-item" href="#">Bodycon </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-disabled="false">JEANS</a>
+                        <ul class="dropdown-menu " style=" margin-left: -70px;">
+                            <li><a class="dropdown-item" href="#">Skinny Jeans</a></li>
+                            <li><a class="dropdown-item" href="#">Slim Fit Jeans</a></li>
+                            <li><a class="dropdown-item" href="#">Bootcut Jeans </a></li>
+                            <li><a class="dropdown-item" href="#">Baggy Jeans</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-disabled="false">SHOES</a>
+                        <ul class="dropdown-menu " style=" margin-left: -70px;">
+                            <li><a class="dropdown-item" href="#">Sneakers</a></li>
+                            <li><a class="dropdown-item" href="#">Loafers</a></li>
+                            <li><a class="dropdown-item" href="#">Canvas</a></li>
+                            <li><a class="dropdown-item" href="#">Boat Shoes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="#">ACCESSORIES</i></a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="#">DELIVERY</a>
+                    </li>
+                    <div>
+                        <button class="btn  " type="submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
+
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- carousel slide show -->
+    <div class="container-fluid" style="width: 80%;">
+        <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="./images/download.jpeg" class="d-block w-100" alt="img">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="./images/download (1).jpeg" class="d-block w-100 " alt="img">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="./images/w concept.jpeg" class="d-block w-100 " alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- select cards-->
+    <div class="container-fluid py-4" style="width: 80%;">
+        <div class="row">
+            <!-- First Card -->
+            <div class="col-md-4">
+                <div class="card ms-auto" style="width: 50%;">
+                    <img src="./images/download (12).jpeg" class="card-img" alt="...">
+                    <div class="card-img-overlay d-flex justify-content-center ">
+                        <button type="button" class="btn btn-outline-dark fw-bold border-0 bg-opacity-75"
+                            style="background-color: rgba(188, 188, 180, 0.712); width: 90%; height: 17%; margin-top: 80%; font-size: large;">Women's</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Card -->
+            <div class="col-md-4">
+                <div class="card m-auto" style="width: 50%;">
+                    <img src="./images/download (13).jpeg" class="card-img" alt="img">
+                    <div class="card-img-overlay d-flex justify-content-center ">
+                        <button type="button" class="btn btn-outline-dark fw-bold border-0 bg-opacity-75"
+                            style="background-color: rgba(188, 188, 180, 0.712); width: 90%; height: 17%; margin-top: 80%; font-size: large;">Men's</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Card -->
+            <div class="col-md-4">
+                <div class="card me-auto" style="width: 50%;">
+                    <img src="./images/download(14).jpeg" class="card-img" alt="...">
+                    <div class="card-img-overlay d-flex justify-content-center ">
+                        <button type="button" class="btn btn-outline-dark fw-bold border-0 bg-opacity-75"
+                            style="background-color: rgba(188, 188, 180, 0.712); width: 90%; height: 17%; margin-top: 80%; font-size: large;">Kid's</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- product cards without width -->
+    <div class="container-fluid shadow mt-4" style="width: 80%;">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-0 m-auto">
+                    <img src="./images/women's/Sleeveless Jumpsuit.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sleeveless Jumpsuit</h5>
+                        <p class="card-text">Sleek, all-in-one outfit with wide-leg pants.</p>
+                        <p><b>$29.90</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-0 m-auto">
+                    <img src="./images/women's/Playsuit.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Playsuit</h5>
+                        <p class="card-text">A chic, one-piece outfit for casual wear.</p>
+                        <p><b>$24.56</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-0 m-auto">
+                    <img src="./images/women's/Wide-Leg Jeans.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Wide-Leg Jeans</h5>
+                        <p class="card-text">Relaxed fit with a flattering high waist.</p>
+                        <p><b>$34.00</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-0 m-auto">
+                    <img src="./images/women's/Bridal Pantsuit.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bridal Pantsuit</h5>
+                        <p class="card-text">Modern and elegant pantsuit for brides.</p>
+                        <p><b>$35.20</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-0 m-auto">
+                    <img src="./images/men's/Black Turtleneck.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Black Turtleneck</h5>
+                        <p class="card-text"> Sleek, all-in-one outfit with wide-leg pants.</p>
+                        <p><b>$32.45</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-0 m-auto">
+                    <img src="./images/men's/Blue Shirt.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Blue Shirt</h5>
+                        <p class="card-text"> A chic, one-piece outfit for casual wear.</p>
+                        <p><b>$44.25</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-0 m-auto">
+                    <img src="./images/men's/Green Jacket.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Green Jacket</h5>
+                        <p class="card-text"> Relaxed fit with a flattering high waist.</p>
+                        <p><b>$38.07</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-0 m-auto">
+                    <img src="./images/men's/Beige Hoodie.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Beige Hoodie</h5>
+                        <p class="card-text"> Modern and elegant pantsuit for brides.</p>
+                        <p><b>$65.60</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--product cards with width -->
+    <!-- <div class="container-fluid shadow mt-4" style="width: 80%;">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-0 m-auto" style="width: 18rem;">
+                    <img src="./images/women's/Sleeveless Jumpsuit.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sleeveless Jumpsuit</h5>
+                        <p class="card-text"> Sleek, all-in-one outfit with wide-leg pants for a stylish look.</p>
+                        <p><b>$29.90</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-0 m-auto" style="width: 18rem;">
+                    <img src="./images/women's/Playsuit.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Playsuit</h5>
+                        <p class="card-text"> A chic, one-piece outfit for casual wear.</p>
+                        <p><b>$24.56</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-0 m-auto" style="width: 18rem;">
+                    <img src="./images/women's/Wide-Leg Jeans.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Wide-Leg Jeans</h5>
+                        <p class="card-text"> Relaxed fit with a flattering high waist.</p>
+                        <p><b>$34.00</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-0 m-auto" style="width: 18rem;">
+                    <img src="./images/women's/Bridal Pantsuit.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bridal Pantsuit</h5>
+                        <p class="card-text"> Modern and elegant pantsuit for brides.</p>
+                        <p><b>$35.20</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-0 m-auto" style="width: 18rem;">
+                    <img src="./images/men's/Black Turtleneck.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Black Turtleneck</h5>
+                        <p class="card-text"> Sleek, all-in-one outfit with wide-leg pants for a stylish look.</p>
+                        <p><b>$32.45</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-0 m-auto" style="width: 18rem;">
+                    <img src="./images/men's/Blue Shirt.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Blue Shirt</h5>
+                        <p class="card-text"> A chic, one-piece outfit for casual wear.</p>
+                        <p><b>$44.25</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-0 m-auto" style="width: 18rem;">
+                    <img src="./images/men's/Green Jacket.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Green Jacket</h5>
+                        <p class="card-text"> Relaxed fit with a flattering high waist.</p>
+                        <p><b>$38.07</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-0 m-auto" style="width: 18rem;">
+                    <img src="./images/men's/Beige Hoodie.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Beige Hoodie</h5>
+                        <p class="card-text"> Modern and elegant pantsuit for brides.</p>
+                        <p><b>$65.60</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- product with carousel-->
+    <!-- <div class="container-fluid shadow" style="width: 80%;">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color: black;"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: black;"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: black;"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card border-0 m-auto" style="width: 18rem;">
+                            <img src="./images/women's/Sleeveless Jumpsuit.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Sleeveless Jumpsuit</h5>
+                              <p class="card-text"> Sleek, all-in-one outfit with wide-leg pants for a stylish look.</p>
+                              <p><b>$29.90</b></p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card border-0 m-auto" style="width: 18rem;">
+                            <img src="./images/women's/Playsuit.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Playsuit</h5>
+                              <p class="card-text"> A chic, one-piece outfit for casual wear.</p>
+                              <p><b>$24.56</b></p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card border-0 m-auto" style="width: 18rem;">
+                            <img src="./images/women's/Wide-Leg Jeans.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Wide-Leg Jeans</h5>
+                              <p class="card-text"> Relaxed fit with a flattering high waist.</p>
+                              <p><b>$34.00</b></p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card border-0 m-auto" style="width: 18rem;">
+                            <img src="./images/women's/Bridal Pantsuit.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Bridal Pantsuit</h5>
+                              <p class="card-text"> Modern and elegant pantsuit for brides.</p>
+                              <p><b>$35.20</b></p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card border-0 m-auto" style="width: 18rem;">
+                            <img src="./images/women's/Sleeveless Jumpsuit.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Sleeveless Jumpsuit</h5>
+                              <p class="card-text"> Sleek, all-in-one outfit with wide-leg pants for a stylish look.</p>
+                              <p><b>$29.90</b></p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card border-0 m-auto" style="width: 18rem;">
+                            <img src="./images/women's/Playsuit.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Playsuit</h5>
+                              <p class="card-text"> A chic, one-piece outfit for casual wear.</p>
+                              <p><b>$24.56</b></p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card border-0 m-auto" style="width: 18rem;">
+                            <img src="./images/women's/Wide-Leg Jeans.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Wide-Leg Jeans</h5>
+                              <p class="card-text"> Relaxed fit with a flattering high waist.</p>
+                              <p><b>$34.00</b></p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card border-0 m-auto" style="width: 18rem;">
+                            <img src="./images/women's/Bridal Pantsuit.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Bridal Pantsuit</h5>
+                              <p class="card-text"> Modern and elegant pantsuit for brides.</p>
+                              <p><b>$35.20</b></p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card border-0 m-auto" style="width: 18rem;">
+                            <img src="./images/women's/Sleeveless Jumpsuit.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Sleeveless Jumpsuit</h5>
+                              <p class="card-text"> Sleek, all-in-one outfit with wide-leg pants for a stylish look.</p>
+                              <p><b>$29.90</b></p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card border-0 m-auto" style="width: 18rem;">
+                            <img src="./images/women's/Playsuit.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Playsuit</h5>
+                              <p class="card-text"> A chic, one-piece outfit for casual wear.</p>
+                              <p><b>$24.56</b></p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card border-0 m-auto" style="width: 18rem;">
+                            <img src="./images/women's/Wide-Leg Jeans.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Wide-Leg Jeans</h5>
+                              <p class="card-text"> Relaxed fit with a flattering high waist.</p>
+                              <p><b>$34.00</b></p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card border-0 m-auto" style="width: 18rem;">
+                            <img src="./images/women's/Bridal Pantsuit.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Bridal Pantsuit</h5>
+                              <p class="card-text"> Modern and elegant pantsuit for brides.</p>
+                              <p><b>$35.20</b></p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div> -->
+
+    <!-- footer -->
+    <div class="container-fluid"
+        style="background: linear-gradient(to right,rgb(224, 224, 224),rgba(255, 242, 223, 0.726)); width: 80%;">
+        <div class="row m-auto" style="width: 90%;">
+            <div class="col-3 text-center">
+                <img src="./images/logo.png" class="mx-auto d-block pt-5 pb-2" width="100" alt="">
+                <h5> Vivid Outfits Unleashing Xpression</h3>
+
+            </div>
+            <div class="col-3">
+                <h5 style="padding-top:50px; opacity: 0.7;text-decoration: underline;">About</h5>
+                <p> A fashion brand that designs unique, stylish outfits to help people express themselves with
+                    confidence and flair.</p>
+
+
+            </div>
+            <div class="col-3">
+                <ul type="none" style="padding-top: 50px;padding-left: 80px;">
+                    <li>
+                        <h5 style="opacity: 0.7;text-decoration: underline;">Navigation</h5>
+                    </li>
+                    <li>Home</li>
+                    <li>Page</li>
+                    <li>About us</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="col-3 ">
+                <ul type="none" style="padding-top: 50px;padding-left: 80px;">
+                    <li>
+                        <h5 style="opacity: 0.7; text-decoration: underline;">Quick Link</h5>
+                    </li>
+                    <li>Contact Us</li>
+                    <li>FAQs</li>
+                    <li>Booking</li>
+                    <li>Return</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row m-auto py-3" style="width: 90%;">
+            <div class="col-3 text-center">
+                <h5><i class="fa-solid fa-location-dot"></i> London eye, UK</h5>
+            </div>
+            <div class="col-3 text-center">
+                <h5><i class="fa-solid fa-phone"></i> 088-777-666-85</h5>
+            </div>
+            <div class="col-3 text-center">
+                <h5><i class="fa-solid fa-envelope-open-text"></i> vouxfashion@gmail.com</h5>
+            </div>
+            <div class="col-3 text-center">
+                <i class="fa-brands fa-facebook mx-2"></i>
+                <i class="fa-brands fa-twitter mx-2"></i>
+                <i class="fa-brands fa-youtube mx-2"></i>
+                <i class="fa-brands fa-instagram mx-2"></i>
+            </div>
+        </div>
+        <hr style="width: 90%; margin: auto;">
+        <div class="text-center py-3">
+            <p>© 2024 Your VOUX. All Rights Reserved.</p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
